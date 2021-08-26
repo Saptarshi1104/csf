@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Case Study</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <center>
+            <div class="col-xs-12 header_div">
+                <h3>Case Study
+                    <img src="Case Study Logo.png" />
+                </h3>
+            </div>
+            <div class="col-sm-6 col-xs-12 main_div">
+                <div id="d1">
+                <h4>1. Test Image - </h4>
+                <img src="https://watertogo.eu/wp-content/uploads/2020/09/rsz_ekfb3121.jpg" />
+                <h4>Output on Microsoft Azure- <b>A Person Holding a Bottle of Alcohol on Field</b></h4>
+                <h4 id="mn1">Output on MobileNet-<b>Water Bottle</b></h4>
+                <p>Result- MobileNet is more accurate</p>
+                </div>
+                <div id="d2">
+                <h4>2. Test Image - </h4>
+                <img src="https://cdn.shopify.com/s/files/1/0191/2234/products/DSC_2923_2048x.jpg?v=1569117527" />
+                <h4>Output on Microsoft Azure- <b>A Bedroom with a Bed and a Painting</b></h4>
+                <h4 id="mn2">Output on MobileNet-<b> Studio Couch, Day Bed</b></h4>
+                <p>Result- Microsoft Azure is more accurate</p>
+                </div>
+                <div id="d3">
+                <h4>3. Test Image - </h4>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFhUVGBUVFRUXGBgXFxUVFRUWFhUVFRgYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0dHSUtLS0tLS0tLS0rLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLf/AABEIAKsBJgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYBBwj/xABDEAABAwEFBQQGCAMHBQAAAAABAAIDEQQFEiExBkFRYXETgaGxFCIyUpHRBxUzQnKiwfBDU+EjYoKSstLxFiRERcL/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQMEAgUG/8QAMhEAAgECAgcGBgIDAAAAAAAAAAECAxEEIRITMTJBUWEFFHGBkfAiobHB0eFS8TNC0v/aAAwDAQACEQMRAD8A9xQhCAEIQgBUt/2dry3EK5HzCulRbS2ns8LsJcADXDmdRuXMth1HaRrusUbcVGim+ualwQxj2KAlU1g2jsxBa55YTqHgt81ZQYDnG9rhlTMHJcK1jtpk8DkFXXhAS6obu4KWA7w03VqmvSXjUVPD9VNiLlZhAIqN/BWcjM8t+5cFqa7JzE524GiyYqtGlHPNsshdvI4yyu3kDxQ+CgqXgdyW2aqrLwsNqe+ojaWDJoElHAcSCKVPVYMLWq4ibUcktuXvacYmpKlC6V37zJlOdUBpVC+Z8Twx7HMrXDX71OB0PRWdmtdev7y6r0nCxipdoqTtNW98iZhK5hKW0gioOS7Rc2PSuNOYUUKdwpJCWFxs1XSClUQQlgIzXClFqEsSIJKTUpwoSwuNFySSniE2Qo0RcbLkkvSnpOFRYkbL1obj+yHV3ms+5vJaC4/sh1d5qyhveRXV3SwQhC2GcEIQgBCEIAQhCAEIQgBZ3amBzizC6mR303haJZ7aV1Hspwd5hcVJaMbncFd2KN9ldhYCKmtHVAORUcXc0YiY6FuhbVtRxFFP7Z3EoMh4lZ3iVyLtW+Y1ZmOFcEkopx9YU71bWZ0mVZGnqKFVtTxK7U81HeehOq6ltasm1yxaVHiqx0xrTv6JNSsN9IG2D7DLGxkTXlwLiXkhtAfZFN547l5WLUsRXUIrO2X1ZdBKnFtnpVgfmOvl/WixFs+lj/upILPDjZDjLy4e22MVe4HEC0f4XcaHcfR5tc63NlJibEYnNbRpLgQ8Ghqd4w+KetP0Z2Ke0md/aAOcXvhGHA9xNTRxGJoJ1A4mhC9HAUJUaei1Z3d/lb5FFSUZSuehlsdphaXNxRyNa8A5EBwDmnLNrs9QstJF2EpiLsWGhad5aRUYueo507lrrO7Ibt1By0osHtNebTa5Mx6mBlebRU+LiO5baiujyO0NGMVN7b28szRQS0NNzsxyI9od4z+KdEuaorFaS5hO8Zt/w5jwqO9XrH1APEA/FZpo04CvpxceWa8P7+VjvapPbBKIKKLg9CwGUJHahKok4UGR3tQkdqEstSaclFwd7RcxoITZPJTcCnygKLaLc1u/VFsecJAbVYi2w2gONWOLfungstarNZQX1Kqs3FZK5umyhwSiVibtvGZjCMBLuCuLlt8sntMc2m4qKeIlL/X8E06qnwLwuV9cn2Q6u81ni7ktBcJ/sR1d5rdQ3/ImrulihCFsM4IQhACEIQAhCEAIQhACz20zCXMoaZO8wtCsXt9tHZrI+ETyYC9ry3ImoaW106hVVk3DIspbwwYHe/TuCbdZXfzndwCyF+bZ3fPEY/SJGnVrmBwOIaZhZO4dqeylJe6R8bwWyak03OHArGqMmr2fozVpR5nrHoLj/Hf3UQbuO+eT4hYfZ3bCyWaJ7Q20OeXPIq17iRX1RU6ZUUFl9Olhn7Vto7eRwfEWggMDfZA4DLPjmmplyJ0o8z0mG7cLg7tZCRxOXeFX7SWWyStc21PGEgB1Mi2hq0g/dIOYKo7j22e2INtEEzpG5YmsJDhxPAqjlt8uG2AQyn0lwLMQ9kaaLnu70lK2a2MjSWxstNgrndYJ7RGZGyRTNjls8rfZkYxzmvrwkbjZVvOuma9Lsc1dO9eY7FWqSGJ0EkElC7E0kUDaj7tdDqvPb52rtlpeW9q8NJIbDESG03ZNzfpWpWuDk5NPgUzSilY+mLde0cET5HPZVjXODMQq5wrhaBWuZFPivKIbQXEucaucS5x4lxq74krA7JXbIJnSPY9ga37wc3EXnLXUZE9y21nqM1ZI+W7YrOVRQT2L5v8ARrLntGQyAAPcFqrveDGKbqinChIosjdNoaW0PSvzWosBIbrXPLlln4596onsNXZE/jS5p/Z/YnoouNKC5VH0VjpCEjGgyILCiklcLkkuQk46qSarjnlRzKQfWy4IlcN2H896cMjaZ+SIBX1juTF4SkFpaBTerVGxW3ciQQgvJApRScWe5Ouwkg1oeC5JHXIaqNWrWQTsNElaC4vsh1d5rOljhqtFcP2I6u80oq07dBVd4lihCFsM4IQhACEIQAhCEAIQhACzG1t3RSvjMkbXlrXAFwrQEitPgFp1g/pGvm0QSQiCyunxNeSQaYaFtK141PwVVbcdiylvFde1mghhe5sDS6lGBrKku3AAKsveGV9lZNZYw2QACSMso48aDiordpLzd7N2gfieE79b3ydLHC3q9Y1fp6/s2ItNmopZLIROzBL6wqWgH+65MbPxWuOKdlpZicMRie2lXimQpuKgG132dIrOOpJQBfh+/Zm9xKgnMtNnoJbNZmuma+WWR4LmgAlgcdOgGqZdeMsc8xNjmlJcMDm4cOGgyFSoPoF9H/yoW9GpL7kvk/8AsGAcmJZPivn+CG37/sv4bwkls8xlgfAQ1zQCRUhzcIc0itDmsnZbFFC0MiYxjeQzNN7nHMnqrCz3XbIcTrXbO3Dm4WswhoBqCXnuFO8qI879aZnlvy6q6krLI8PtSreSh0Ilulq6hOmi5BuHFQ5ZM+e/rvUqzSDJX2PmaqV7lrYKg04rW3Y/1TQ93BZKxzGq1t3uGRFP6LiSNmAlozUlwZYtkK46QpAB46eHAkbgn4Gg66rJZ3sfYqaktJbCO6dcMhTz7PTVKdhaKqdCROkiP2hS2sJ3pcbBrxUmyxUBFFZGnzIcxDYqDmmw0HMpZnAOAqHbre2JorvNB5K3YcEpzzUNGiLUBUJqGSjcRSZj2haRVCDjWiqkytqQQeqbfGRuUK9bV2Mb3saXOp7KAsJM1bXB9iPxO81mrmmdJGHOGEuGnDktRcceGIDm7zXdPacz2FghCFcVAhCEAIQhACEIQAhCEALP7SH12dHeYWgVJf8AG0uZXgfMKqtG8LHdN2kUrXJYS24BnUKys08ZbX1eazKk+Ze5oqSEmqvu3jHD4KHeFojAxU05KdT1Gs6EBqeZCToFH+tW7mlLs19AOGXJFTXMaT5FFte0twAimRNDzNP0Kx9rlwxnM1LgP1/RbDb6XE+J2nqEfBxP/wBLCXkfVB/veYPyVkFbI8PG3lUfvgRnvDG4jwrqKfErWR3S0UzrQALB3hLWMjkaL0C7LTjiid70bDXiS0aqyR5cqMdG75jkVnbw71KDwNDQjSh/dU0PguuodRVcFaglsLc4pGNe11JWZtI8YyN7XDdxUu6beydmJuThTE0aZ6ObxafBUFgnwPyBPHM0A/5FUt57C042ZNlLnN3APy7SP8Lqhw/HyXMoKSsbcLi50paa8JLmuD8V9MthqmzHQiqjXhC2VuCpbzGqmQPa+MSA+qfiOIPMFVtuvIMIIbVVLSWTPplKMkpR2Ml2Wx4QKmtFYLPWi/XNGTddE+29JOCs0kRZllaYs6lZa9rILRKwE+qwhwG4kHJWJdNKTXIcFKs0TW5EUTaNhPhApRKLMxTRRpCRmNFJsxFF2QEj9yiTwk7gpD5AcxmmbR1p+8kA0YyBUaq/uOTFEDzcPgVnXOOh7lobhaRCAeLvNdU945nsLFCEK4qBCEIAQhCAEIQgBCEIAWL28tGGSEcWv8C1bReffSaf7SD8L/8AU1V1N07p7xRPt3AK2uS21xDoVle03KzuGT1yOSzpmhrI1nbHiUzbX1Y7XTimATwS5InFrhTcVZcrKBtoPFHb+a5DYJXaRuKksuO0H7gHUhVXLTu1EeOBrgfYIJ6OyPjRYe0OFDXMakdNfCq9T+qXOj7NxHrNLTnxHzXltoYWktOoJBHMGhHmulJNnmYyk01L3kUNucMwNN39PFb7ZyMmzQkNcQI2A0aSAQ0ZEgU4Lz22RgEjPz6L2z6PsrDZs/4bPKqz9oYt4amppXu7GSlhlVTjexSOI4/DNcrwqB49y3Fuu6OUVc31ho9tA7nnTPoVR2nZx5zjkaRwcC0/EVBVFLtWhJLT+F+q9V+Cir2dVi/h+Jej9GZ3tCCBu3hXQw2mEx1wvYQ5pO5zfZd01aTwKji4psRyYC00oXU51GW9SrHdU7HVLCRmDhLTkdchnwK0RxuHm7Rmr+Jnhhq8JZwdntyJOy9pBa+J1Wvr6zDucBR1Ov8AXerhtljpnmslaonl3axgiaKjXt3yNGQGf8Ru6uRGXBXtzXoy0sDmuo/7w40yrQ6HcRuSpUlSk5PODtn/ABf/AC9qfBt3dmret2dXjoqk8uXXp4rPx4dLCSCLeAliNnLkkdgeKOxK71r5Hq6sfcG8lHkhB3hNPs5TfZOG4qNa+Q0CS2Km9OsjpvCjMz3LrozzXesfIixKaGt4UTMjQ7ShTT4XEaFR+wc3QFQ6j5DR6i22Q15LQXMwiIA8XeazpbJwK0NyV7IV1q7zVtKelK1jiorIsEIQtJSCEIQAhCEAIQhACEIQAsRt/A10sNaE4X0GZPtN0AW3VRfQ9ZvQ+YVVZ2gWUleRhILke77gaOJFPDVW1huns3Yi4E0pQDJWtV2ixabNWihtrQlhC5VcttkpJCg5dxJIK7VQSLqsBt9c+F/bs9mQ0fwbJuPIOHiDxW8BSJo2vaWuAc1wo5pzBHAqU7O5VVpKpHRZ8/2+pOmYyXr/ANG81bDDyaW97XOBWa2r2NMYdJBV8dCS3V8fX3289Rv4rv0X3jhx2dx0ONgPB3tD/Nn3rN2qtbhXb/Vp/X8nnU6cqVW0uJ6qwphpoSOB/wCE5EU3L7f4h4j/AJC+Zb+FM1HLVHWjuGR6bj++KTHkn2eCZw0JHwPELmSv8XqNhWX5ZnAi0R1qKNkA1I0a7u0PLoslfMD4JPS4KlrvWlDdWOGRlpwOVaaGpOq9BjdnTUGopuI3grKW2E2ecxPq6GQODOLmOyc2vFtadKHevpOysXrYaqW1fNfr6Hk46kqb1u2LefR8+l3x/lbmWuz20EdoaA44ZB/lPOvHkrpzSNV5ParotNlNWgyRfdkYC6grkJGDNrqU5LQ3FtkcOGQYwNeI6cVr1bj/AI9n8Xw8G/o8uTSyN9PFSpJKp8UeEunX8r0NqQuJMFoY9ofG4OadD5g80sldJ3Vz0YyUldbBBXWvI3pVEkqbtbCbDgtB5FKFpG8KPVcUqpJHLhEnMe07wrCzD1fiqGiuLr+zHU+a0UamlKxTVhZXJiEIWooBCEIAQhCAEIQgBCEIAVRfXtN6H9Fbqnvz2m9D5hU19xltHfK+q5VdXCsBrCq4UJNUAFJx0XCUh7lAHO0XDImHPTXakmjRU7h+9yi5NjrrcQXN3iru7j0XlcN4ehW9stDgjkzrr2bwWuOGm4Go44QvVZrNQVdQu8hwBWZv67GTZPbpo4ZOHQ/povOo4qnTqSi84vL+uZFfDSrRi4NKUXdX49L8D0OzTh7Q5pDmkAgg1BBzBHJLfGDQ8NO9eS3JbrTdhoSJbJXTR0ZcfuA8fd0P91emXRfMNobiikDuI0c38TTm1eXisI6b04PSjzX0fJ+9hzZvejZ9fs9jXVE3D1XJYsQyOY/ZCdqlLI72yeRw4rkRo4uaRb7FHMwseKjUEGjmu3OadxUkhdC7hUlCSlB2aIlThJNNXTM6667RESYHteDmWuo1woMgK5Hw1VZaZYZHAWqzBsnE/wBm/q12WId62pCbmja4Uc0OHAio8V69LtScf8qUuqyf4+hjeDnBWoVHFfxfxR9HmvJ+RX3ayNjAyKgaM8NanPUmual1VLft3tjZ20TadnmQDQhu9wPLUtOorv1ZsO0DHD1j8RSnKuh8F61CrTxENOk7rk9qIjjVRlqq6UeTW619vmvA0C5VRoLYx2jh5J/Eu/E9GMozV4tNdMzpSMKUuIScKuLq+zHU+aqFcXZ9mOp81dh9/wAiqtuktCELcZQQhCAEIQgBCEIAQhCAFT357Teh8wrhVN8tqW9D5hU19xltHeKooS8P7/fmklqwmsQQkp6i4WqAMOCbcFILU2QhJFkC7d9oDXGppXf03E/FOlijWiKoVFamqkHF8TqJZWqhFd3FV0tlruWOvK7LSwl1ne5hzqKksd1acvgtXdd+NdG3tWmKQAB7XA0xAZlhpRzeFPBeNUwrpx0k7o1WcVlmZnb2z4YY+co76Mcs1ZHlpD2FzXN0c0lrh0IzWq2qkNpkYGgiNlSMs3OOrqcKZDvUKG7SNQvSwV4Ukn4+pxOLebJt37d2lgwyNbNT7x9R/eWjC74BXlk+kCE+3FKzmAHjwNfBZxt2J+O7WqZ4WhPbH0y/XyKtBG0s21dkfpO1vJ4LP9QCsoLfC/2ZYz0e0+RWCZdbE4biYdwPULM+zaV7ptHDpo3rp2jV7Rx9YfNVN4bU2SGofMyvug4j4ZLLS7PgmtKk61zJ513qDPsyDuUrs2m38Um/kcatvYxrajb6KZjoQx/Zu9oh2AkAgijqcQMqUypnVY1u1DWOoS4t4kVP+Ib+o+C0Vr2TPBU1q2QPReph1Sox0YKyM9XBRqq0ld8+Jo7pvtsgrG8AmtHVxMrwqM2+JWjum/HYXdoA2RnttrqDo4bj1GtV5dFsrNG7FE8sdxG/ruI6q4YLxAHqwvpvLXNd8QaeC0upB8fU8qfZeIpT0qDt52f495nqlkvhjtcjpxFVZLy66vSSQJbPI073NoRTiCKH4hekXflG1ueQ3hVS0Fum7BzxbbjiI2tx2X+xJVvdn2Y6nzVRRW92fZjqfNW4ffNVbdJaEIW0yghCEAIQhACEIQAhCEAKpvj2m9D+itkxPZ2v9oVpzP6KupFyjZHcJKMrsolyn7/eiu/q+P3fE/Nd9Bj93xPzWbu8uhfro9SiXS1XfoEfu+J+aPQI/d8T807vLoNdHqUdEl0SvvQI/d8T80egR+74n5p3aXQa6PUzbmJqRi1P1fH7vifmk/VsXu+LvmuXhpvivfkSq8epkHMokmMHRa/6qh9zxd81z6oh9z8zvmq+5T5r1f4Ou8x6mFms/JRzEvQfqeD3PzO+aSbis/8AL/M75p3KfNer/BPeo9Tz05Jxso3rdnZ+zfy/zO+a5/07Zv5X5n/7lKwc+a9f0HiYPg/fmY+IDcVIjAWpGz9mH8P8z/8AclfUdn/l/md81PdJ8178jnvEevvzM4CE40LRC54Pc/M75pX1TD7n5nfNdd1l09+Rzr4md7MHguGyN4LS/VkXueLvmgXdF7vi75p3WXT35DXx6ma9Ab7oTjLKBoFoxYI/d8T8130GP3fE/NFhZdBr0ULIgNydorn0GP3fE/NHoMfu+J+a67tLoNdH3/ZSq4uz7MdT5pXoMfu+J+adijDRRooFbSpShK7K6lRSVkOIQhaCkEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCA/9k=" />
+                <h4>Output on Microsoft Azure- <b>A Bird sitting on top of a Parrot</b></h4>
+                <h4 id="mn3">Output on MobileNet- <b>Pencil Sharpener</b></h4>
+                <p>Result- None of the answers were correct, but Microsoft Azure is a little better</p>
+                </div>
+                <div id="d4">
+                <h4>4. Test Image - </h4>
+                <img src="https://static.toiimg.com/thumb/msid-78011895,width-1200,height-900,resizemode-4/.jpg" />
+                <h4>Output on Microsoft Azure- <b>A close up of some shoes</b></h4>
+                <h4 id="mn4">Output on MobileNet-<b>Running Shoe</b></h4>
+                <p>Result- Microsoft Azure is more accurate</p>
+                <p id="result4"></p>
+                </div>
+                <div id="d5">
+                <h4>5. Test Image - </h4>
+                <img src="https://cdn.vox-cdn.com/thumbor/0vkUlE9CGelZsRZlY1XZZGqsZVQ=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22015272/cgartenberg_201105_4276_004.0.jpg" />
+                <h4>Output on Microsoft Azure- <b>Graphical User Interface, Some apps</b></h4>
+                <h4 id="mn5">Output on MobileNet- <b>Cellular Telephone, Cellulaar Phone, Cellphone, Cell, Mobile Phone</b></h4><span id="mn5_output"></span>
+                <p>Result- MobileNet is more accurate</p>
+                <p id="result5"></p>
+                </div>
+                <p id="conc"><b id="br">So overall, I tested 5 images, in which the Microsoft Azure identified 3 and MobileNet identified 2. So, according to me Micorsoft Azure is more accurate</b></p>
+                </div>
+            <div class="col-xs-12 footer_div">
+                <h5>Developed By- Saptarshi Mandal</h5>
+            </div>
+        </center>
+    </body>
+</html>

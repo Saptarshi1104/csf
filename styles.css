@@ -1,0 +1,59 @@
+body{
+background-color: pink;
+color: red;
+font-family: 'Special Elite', cursive;
+text-align: center;
+}
+.header_div{
+background-color: mediumaquamarine;
+color: red;
+text-align: center;
+}
+.header_div img{
+height: 100px;
+width: 100px;
+}
+.main_div{
+color: blue;
+text-align: center;
+}
+#d1, #d3, #d5{
+box-shadow: 5px 5px 18px white;
+text-align: center;
+background-color: burlywood;
+}
+#d2, #d4{
+box-shadow: 5px 5px 18px beige;
+text-align: center;
+background-color: burlywood;
+}
+.main_div p{
+font-size: 18px;
+background-color: lightgray;
+box-shadow: 5px 5px 18px whitesmoke;
+}
+.footer_div{
+width: 100%;
+color: black;
+background-color: white;
+}
+.main_div img{
+height: 310px;
+width: 300px;
+}
+.main_div #mn1, #mn2, #mn3, #mn4, #mn5{
+color: green;
+}
+.main_div p{
+color: red;
+}
+b{
+color: purple;
+}
+#br{
+color: brown;
+}
+#conc{
+background-color: pink;
+font-size: 15px;
+}
